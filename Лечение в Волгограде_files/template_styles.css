@@ -1,0 +1,94 @@
+.news-detail-page__wrap iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+}
+div.main-feedback__wrap form
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0 56px 40px;
+}
+div.feedback__content form
+{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	max-width: 520px;
+	width: 100%;
+	margin-right: 40px;
+}
+.feedback__close,form input {
+
+    z-index: 200;
+}
+input.btn {
+    font-family: Myriad Pro;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+    padding: 13px 20px;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    z-index: 2;
+}
+input.detail {
+    display: block;
+    width: unset;
+    text-align: center;
+    position: relative;
+    /* top: -30px; */
+    margin: 0 auto;
+    border: unset;
+}
+.consultation input.btn.detail{
+	width: unset;
+}
+.onkologiya-gbuz-vokod-page .tour__info-wrapper {
+
+    font-family: "Myriad Pro";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+}
+.about-section__text-wrap
+{font-family: Myriad Pro;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+    max-width: 982px;
+    width: 100%;}
+.detail_picture
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
+   
+    width: 100%;
+    border-radius: 30px;
+}
+.otziv-detail__text
+{    font-family: "Myriad Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;}
+.vrach-detail-page__who-tags {
+    padding-left: 17px;
+    margin-bottom: 37px;
+    font-family: "Myriad Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    position: relative;
+}

@@ -1,0 +1,155 @@
+console.log('swiper-sliders.js подключен')
+    var swiperGallery = new Swiper(".photogallery", {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        600: {
+          slidesPerView: 2,
+			spaceBetween: 40,
+        },
+        1241: {
+          slidesPerView: 2,
+/*					spaceBetween: 20,*/
+        },
+	  }
+    });
+
+
+    var swiperGallery = new Swiper("#places", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+    });
+
+
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+			/*			spaceBetween: 20,*/
+        },
+        720: {
+          slidesPerView: 2,
+						spaceBetween: 40,
+        },
+        1241: {
+          slidesPerView: 3,
+						spaceBetween: 30,
+        },
+	  }
+    });
+
+    var swiper = new Swiper(".ourReviews", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+			/*			spaceBetween: 20,*/
+        },
+        700: {
+          slidesPerView: 2,
+						spaceBetween: 40,
+        },
+        1241: {
+          slidesPerView: 3,
+						spaceBetween: 30,
+        },
+	  }
+    });
+
+var swiper = new Swiper(".ourDoctors", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+	nextEl: ".swiper-button-next",
+	prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+	320: {
+	  slidesPerView: 1,
+		/*			spaceBetween: 20,*/
+	},
+	640: {
+	  slidesPerView: 1,
+		/*			spaceBetween: 20,*/
+	},
+	1200: {
+	  slidesPerView: 1,
+		/*			spaceBetween: 20,*/
+	},
+  }
+});
+
+var swiper = new Swiper(".newsAndEvents", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+	nextEl: ".swiper-button-next",
+	prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+	320: {
+	  slidesPerView: 1,
+		/*			spaceBetween: 20,*/
+	},
+	640: {
+	  slidesPerView: 1,
+		/*			spaceBetween: 20,*/
+	},
+	1200: {
+	  slidesPerView: 1,
+		/*			spaceBetween: 20,*/
+	},
+  }
+});
+
+
+
+
+function openMobileMenu(){
+let mobileMenu = document.querySelector('.mobile-menu');
+/*	mobileMenu.classList.toggle('open');*/
+	console.log('прожатие');
+	mobileMenu.classList.toggle('show');
+
+	document.querySelector('.header__mobile').classList.toggle('column');
+	document.querySelector('.header__feedback-btn').classList.toggle('not-display');
+	document.querySelector('.header__mobile-wrap').classList.toggle('not-display');
+
+}
+
+const mainVideo = document.querySelector('#main-video')
+const modalVideo = document.querySelector('#video-modal')
+
+const mainIfram = document.querySelector('.video-modal__video')
+function openVideo(){
+	mainIfram.src = "https://vk.com/video_ext.php?oid=773369571&id=456239030&hash=bfe8eccdd8fb8c20&js_api=1"
+	modalVideo.style.display = 'block'
+}
+
+function closeVideoModal(){
+	mainIfram.src = "404"
+	modalVideo.style.display = 'none'
+}

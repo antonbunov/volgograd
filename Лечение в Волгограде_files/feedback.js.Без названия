@@ -1,0 +1,237 @@
+console.log('пып')
+
+function openFeedback(idModal){
+	idModal.classList.add('open')
+}
+
+function closeFeedback(idModal){
+let closeFeedbackBtns = document.querySelectorAll('.feedback__close')
+closeFeedbackBtns.forEach(function(){
+	idModal.classList.remove("open");
+console.log('крестик прожался')
+})
+//	modalFeedback.style.display = 'none'
+console.log('должно было закрыться...')
+}
+
+
+/*PAGES*/
+let openBtn = document.querySelectorAll('.openForm')
+let pageNapravleniya = document.querySelector('#pageFormNapravleniya') /*Направления*/
+let pageKlinika = document.querySelector('#pageFormKliniki') /*Клиники*/
+let pageSoprovozhdenie = document.querySelector('#pageFormSoprovozhdenie') /*Сопровождение*/
+let pageTurizm = document.querySelector('#pageFormTurizm') /*Туризм*/
+
+openBtn.forEach(function(btn){
+    btn.addEventListener('click', function(){
+        if(document.URL.indexOf("/napravleniya/") >= 0){ 
+            openFeedback(pageNapravleniya)
+            closeHeaderForm.forEach(function(closeBtn){
+                closeBtn.addEventListener('click', function(){
+                    pageNapravleniya.classList.remove("open")
+                })
+            })
+        }
+        else if(document.URL.indexOf("/kliniki/") >= 0){ 
+            openFeedback(pageKlinika)
+            closeHeaderForm.forEach(function(closeBtn){
+                closeBtn.addEventListener('click', function(){
+                    pageKlinika.classList.remove("open")
+                })
+            })
+        }
+        else if(document.URL.indexOf("/soprovozhdenie/") >= 0){ 
+            openFeedback(pageSoprovozhdenie)
+            closeHeaderForm.forEach(function(closeBtn){
+                closeBtn.addEventListener('click', function(){
+                    pageSoprovozhdenie.classList.remove("open")
+                })
+            })
+        }
+        else if(document.URL.indexOf("/turizm/") >= 0){ 
+            openFeedback(pageTurizm)
+            closeHeaderForm.forEach(function(closeBtn){
+                closeBtn.addEventListener('click', function(){
+                    pageTurizm.classList.remove("open")
+                })
+            })
+        }
+    })
+})
+
+/* страницы */
+
+/*/PAGES*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*HEADER*/
+const openHeaderForm = document.querySelectorAll('.header__feedback-btn')
+const closeHeaderForm = document.querySelectorAll('.feedback__close')
+
+const modalFeedback = document.querySelector('.feedback__modal')
+const modalWindow = document.querySelector('.feedback__content')
+
+/* страницы */
+let oproekte = document.querySelector('#feedbackOProekte') /*О проекте*/
+let napravleniya = document.querySelector('#feedbackNapravleniya') /*Направления*/
+let kliniki = document.querySelector('#feedbackKliniki') /*Клиники*/
+let vrachi = document.querySelector('#feedbackVrachi') /*Врачи*/
+let turi = document.querySelector('#feedbackTuri') /*3D Туры*/
+let soprovozhdenie = document.querySelector('#feedbackSoprovozhdenie') /*Сопровождение*/
+let turizm = document.querySelector('#feedbackTurizm') /*Туризм*/
+let main = document.querySelector('#feedbackMain') /*Главная*/
+let uslugi = document.querySelector('#feedbackUslugi') /*Услуги*/
+
+/*Направления
+let detskayaHirurgiya = document.querySelector('#feedbackDetskayaHirurgiya') /*Детская хирургия (направления)
+let travmaOrtopediya = document.querySelector('#feedbackTravmaOrtopediya') /*Травматология и ортопедия (направления)
+
+страницы */
+
+
+
+
+
+
+
+
+
+openHeaderForm.forEach(function(btn){
+	btn.addEventListener('click', function(){
+
+
+		if(document.URL.indexOf("/o-proekte/") >= 0){ 
+			openFeedback(oproekte)
+			/*closeFeedback(oproekte)*/
+			closeHeaderForm.forEach(function(closeBtn){
+				closeBtn.addEventListener('click', function(){
+					oproekte.classList.remove("open")
+				})
+			})
+		}
+		else if(document.URL.indexOf("/napravleniya/travmatologiya-i-ortopediya/") >= 0){ 
+			openFeedback(travmaOrtopediya)
+			closeHeaderForm.forEach(function(closeBtn){
+				closeBtn.addEventListener('click', function(){
+					travmaOrtopediya.classList.remove("open")
+				})
+			})
+		}
+
+		else if(document.URL.indexOf("/napravleniya/detskaya-khirurgiya/") >= 0){ 
+			openFeedback(detskayaHirurgiya)
+			closeHeaderForm.forEach(function(closeBtn){
+				closeBtn.addEventListener('click', function(){
+					detskayaHirurgiya.classList.remove("open")
+				})
+			})
+		}
+		else if(document.URL.indexOf("/napravleniya/") >= 0){ 
+			openFeedback(napravleniya)
+			/*closeFeedback(oproekte)*/
+			closeHeaderForm.forEach(function(closeBtn){
+				closeBtn.addEventListener('click', function(){
+					napravleniya.classList.remove("open")
+				})
+			})
+		}
+		else if(document.URL.indexOf("/kliniki/") >= 0){ 
+			openFeedback(kliniki)
+			/*closeFeedback(oproekte)*/
+			closeHeaderForm.forEach(function(closeBtn){
+				closeBtn.addEventListener('click', function(){
+					kliniki.classList.remove("open")
+				})
+			})
+		}
+		else if(document.URL.indexOf("/vrachi/") >= 0){ 
+			openFeedback(vrachi)
+			closeHeaderForm.forEach(function(closeBtn){
+				closeBtn.addEventListener('click', function(){
+					vrachi.classList.remove("open")
+				})
+			})
+		}
+		else if(document.URL.indexOf("/3D-tury/") >= 0){ 
+			openFeedback(turi)
+			closeHeaderForm.forEach(function(closeBtn){
+				closeBtn.addEventListener('click', function(){
+					turi.classList.remove("open")
+				})
+			})
+		}
+		else if(document.URL.indexOf("/soprovozhdenie/") >= 0){ 
+			openFeedback(soprovozhdenie)
+			closeHeaderForm.forEach(function(closeBtn){
+				closeBtn.addEventListener('click', function(){
+					soprovozhdenie.classList.remove("open")
+				})
+			})
+		}
+		else if(document.URL.indexOf("/turizm/") >= 0){ 
+			openFeedback(turizm)
+			closeHeaderForm.forEach(function(closeBtn){
+				closeBtn.addEventListener('click', function(){
+					turizm.classList.remove("open")
+				})
+			})
+		}
+		else if(document.URL.indexOf("/uslugi/") >= 0){ 
+			openFeedback(uslugi)
+			closeHeaderForm.forEach(function(closeBtn){
+				closeBtn.addEventListener('click', function(){
+					uslugi.classList.remove("open")
+				})
+			})
+		}
+
+		else{
+			console.log('Или главная, или адрес не добавлен')
+			openFeedback(main)
+			closeHeaderForm.forEach(function(closeBtn){
+				closeBtn.addEventListener('click', function(){
+					main.classList.remove("open")
+				})
+			})
+		}
+
+
+
+
+	})
+})
+
+
+
+/*
+const modalFeedback = document.querySelector('.feedback__modal')
+const modalWindow = document.querySelector('.feedback__content')
+
+function openFeedback(){
+	modalFeedback.classList.add('open')
+}
+
+function closeFeedback(){
+//	modalFeedback.style.display = 'none'
+	modalFeedback.classList.remove("open");
+	console.log('должно было закрыться...')
+
+}
+
+*/
+/*/HEADER*/

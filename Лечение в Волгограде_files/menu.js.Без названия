@@ -1,0 +1,8 @@
+const multipleMenu = document.querySelector('.multiple')
+multipleMenu.oncklick = function(){
+    $(this).preventDefault();
+	document.querySelector('.header__menu-link').classList.toggle('ui-state-active')
+}
+document.querySelector('.multiple a[href="#"]').onclick = function () {
+  $(this).preventDefault();
+};
